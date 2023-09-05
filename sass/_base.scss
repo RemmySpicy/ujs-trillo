@@ -13,6 +13,12 @@
     --shadow-dark: 0 2rem 6rem rgb(0 0 0 / .3);
 }
 
+@mixin centerDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 *,
 *::before,
 *::after {

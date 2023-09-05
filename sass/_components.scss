@@ -1,9 +1,10 @@
+@use './base' as *;
 ///////////////////////
 /// LOGO
 
 .logo {
     height: 3.25rem;
-    margin-left: 3rem;
+    margin-left: 2rem;
 }
 
 ///////////////////////
@@ -11,9 +12,7 @@
 .search {
     flex: 0 0 40%;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centerDiv;
     
     &__input {
         font-family: inherit;
@@ -67,27 +66,51 @@
 /// USER NAVIGATION
 .user-nav {
     display: flex;
+    align-items: center;
+    align-self: stretch;
+    
+    & > * {
+        padding:  0 2rem;
+        cursor: pointer;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    & > *:hover { 
+        background-color: var(--clr-grey-light-2);
+    }
 
     &__icon-box {
-
+        position: relative;
     }
 
     &__icon {
         height: 2.25rem;
         width: 2.25rem;
+        fill: var(--clr-grey-dark-2);
     }
 
     &__notification {
-
+        font-size: .8rem;
+        height: 1.75rem;
+        width: 1.75rem;
+        border-radius: 50%;
+        color: #fff;
+        background-color: var(--clr-primary);
+        position: absolute;
+        top: 1.5rem;
+        right: 1.1rem;
+        
+        @include centerDiv;
     }
+
+
 
     &__user-photo {
         height: 3.75rem;
         border-radius: 50%;
-    }
-
-    &__user-name {
-
+        margin-right: 1rem;
     }
 }
 
