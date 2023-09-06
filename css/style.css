@@ -183,6 +183,34 @@ body {
   padding: 2.5rem;
 }
 
+.gallery {
+  display: flex;
+}
+.gallery__photo {
+  display: block;
+  width: 100%;
+}
+
+.overview {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--clr-grey-light-2);
+}
+.overview__heading {
+  font-size: 2.25rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 1.5rem 3rem;
+}
+.overview__stars {
+  margin-right: auto;
+}
+.overview__icon-star, .overview__icon-location {
+  width: 1.75rem;
+  height: 1.75rem;
+  fill: var(--clr-primary);
+}
 .container {
   max-width: 120rem;
   margin: 8rem auto;
@@ -195,7 +223,7 @@ body {
   font-size: 1.4rem;
   height: 7rem;
   background-color: #fff;
-  border-bottom: var(--clr-grey-light-2);
+  border-bottom: 1px solid var(--clr-grey-light-2);
   display: flex;
   justify-content: space-between;
   align-items: center;
