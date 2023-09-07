@@ -276,6 +276,36 @@ body {
     box-shadow: none;
   }
 }
+.paragraph:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+
+.list {
+  list-style: none;
+  margin-block: 3rem 0;
+  padding: 3rem 0;
+  border-top: var(--line);
+  border-bottom: var(--line);
+  display: flex;
+  flex-wrap: wrap;
+}
+.list__item {
+  flex: 0 0 50%;
+  margin-bottom: 0.7rem;
+}
+.list__item::before {
+  display: inline-block;
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.7rem;
+  background-color: var(--clr-primary);
+  -webkit-mask-image: url(../img/chevron-thin-right.svg);
+  -webkit-mask-size: contain;
+  mask-image: url(../img/chevron-thin-right.svg);
+  mask-size: contain;
+}
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;

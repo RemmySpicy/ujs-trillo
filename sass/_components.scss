@@ -300,3 +300,57 @@
         box-shadow: none;
     }
 }
+
+
+
+///////////////////////
+/// PARAGRAPH
+.paragraph:not(:last-of-type) {
+    margin-bottom: 2rem;
+}
+
+
+
+///////////////////////
+/// LIST
+.list {
+    list-style: none;
+    margin-block: 3rem 0;
+    padding: 3rem 0;
+    border-top: var(--line);
+    border-bottom: var(--line);
+
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        flex: 0 0 50%;
+        margin-bottom: .7rem;
+    }
+
+    &__item::before {
+        display: inline-block;
+        content: '';
+        width: 1rem;
+        height: 1rem;
+        margin-right: .7rem;
+
+        // Older Browsers
+        // background-image: url(../img/chevron-thin-right.svg);
+        // background-size: cover;
+
+        // Newer Browers - masks
+        background-color: var(--clr-primary);
+        -webkit-mask-image: url(../img/chevron-thin-right.svg);
+        -webkit-mask-size: contain;
+        mask-image: url(../img/chevron-thin-right.svg);
+        mask-size: contain;
+    }
+}
+
+
+
+
+
+///////////////////////
+/// BUTTON INLINE
