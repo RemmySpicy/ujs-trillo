@@ -37,6 +37,7 @@
 }
 
 .detail {
+    font-size: 1.4rem;
     display: flex;
     padding: 4.5rem;
     gap: 4.5rem;
@@ -45,7 +46,6 @@
 }
 
 .description {
-    font-size: 1.4rem;
     flex: 0 0 60%;
     background-color: #fff;
     box-shadow: var(--shadow-light);
