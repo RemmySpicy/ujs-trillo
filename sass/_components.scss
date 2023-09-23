@@ -399,7 +399,8 @@
     }
 
     &__user {
-
+        display: flex;
+        gap: 1rem;
     }
 
     &__photo {
@@ -409,7 +410,7 @@
     }
 
     &__user-box {
-        display: flex;
+        // display: flex;
     }
 
     &__user-name {
@@ -421,6 +422,6 @@
     }
 
     &__rating {
-
+        margin-left: auto;
     }
 }

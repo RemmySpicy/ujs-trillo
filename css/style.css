@@ -332,14 +332,19 @@ body {
   padding: 3rem;
   margin-bottom: 3.5rem;
 }
+.review__user {
+  display: flex;
+  gap: 1rem;
+}
 .review__photo {
   width: 4.5rem;
   height: 4.5rem;
   border-radius: 50%;
 }
-.review__user-box {
-  display: flex;
+.review__rating {
+  margin-left: auto;
 }
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
