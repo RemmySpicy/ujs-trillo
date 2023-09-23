@@ -54,8 +54,8 @@
 
 .user-reviews {
     flex: 1;
-}
 
-.component {
-    font: optional;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
