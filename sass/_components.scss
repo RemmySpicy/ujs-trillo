@@ -408,6 +408,7 @@
 
         // Newer Browers - masks
         @supports (--webkit-mask-image: url()) or (mark-image: url()) {
+            background-image: none;
             background-color: var(--clr-primary);
             -webkit-mask-image: url(../img/chevron-thin-right.svg);
             -webkit-mask-size: contain;
